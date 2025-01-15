@@ -145,7 +145,7 @@ const Login = () => {
           </Button>
             <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
               <Link to="/accountrecovery">계정 복구</Link>
-              <Link to="/changepw">PW 재설정</Link>
+              <Link to="/changepw">비밀번호 찾기</Link>
             </div>
           <Link to="/register">회원가입</Link>
         </Paper>
