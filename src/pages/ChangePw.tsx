@@ -95,7 +95,7 @@ const ChangePw = () => {
   };
 
 
-  // 비밀번호 재설정 API 시작
+  // 비밀번호 찾기 API 시작
   const ChangePwbtn = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -138,7 +138,7 @@ const ChangePw = () => {
       }
     }
   };
-  // 비밀번호 재설정 API 끝
+  // 비밀번호 찾기 API 끝
 
 
   return (
@@ -161,7 +161,7 @@ const ChangePw = () => {
             gap: "20px",
           }}
         >
-          <h2>비밀번호 재설정 페이지</h2>
+          <h2>비밀번호 찾기 페이지</h2>
           <TextField 
           id="id" 
           label="학번"
@@ -214,7 +214,7 @@ const ChangePw = () => {
           <TextField 
           id="password" 
           type="password" 
-          label="비밀번호" 
+          label="새 비밀번호" 
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           />

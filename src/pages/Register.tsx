@@ -170,17 +170,17 @@ const Register = () => {
           }}
         >
           <h2>회원가입 페이지</h2>
-          <TextField 
-          value={id}
-          onChange={(e) => setId(e.target.value)}
-          id="id"
-          label="학번" />
-
           <TextField
           value={name}
           onChange={(e) => setName(e.target.value)}
           id="name"
           label="이름" />
+
+          <TextField 
+          value={id}
+          onChange={(e) => setId(e.target.value)}
+          id="id"
+          label="학번" />
 
           <Paper
           sx={{
