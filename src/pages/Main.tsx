@@ -480,6 +480,7 @@ const Main = () => {
         }}
       >
         예약 페이지
+        <Link to="/notice">공지사항</Link>
         <div
           className="seat-container"
           css={{

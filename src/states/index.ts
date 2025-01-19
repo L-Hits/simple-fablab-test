@@ -18,4 +18,6 @@ export const testFablabloginStateAtom = atom({
 
 export const selectedSeatAtom = atom<string | null>(null); // 선택된 좌석 상태
 
+// 현재 페이지 상태 관리
+export const currentPageAtom = atom(1);
 

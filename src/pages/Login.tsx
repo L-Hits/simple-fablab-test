@@ -127,6 +127,7 @@ const Login = () => {
           }}
         >
           <h2>로그인 페이지</h2>
+          <Link to="/notice">공지사항</Link>
           <TextField 
           id="id" 
           label="학번"
@@ -143,10 +144,10 @@ const Login = () => {
           <Button onClick={handleLoginClick} variant="contained" fullWidth >
             로그인
           </Button>
-            <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-              <Link to="/accountrecovery">계정 복구</Link>
-              <Link to="/changepw">비밀번호 찾기</Link>
-            </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+            <Link to="/accountrecovery">계정 복구</Link>
+            <Link to="/changepw">비밀번호 찾기</Link>
+          </div>
           <Link to="/register">회원가입</Link>
         </Paper>
       </FormControl>
