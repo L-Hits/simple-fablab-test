@@ -4,6 +4,7 @@ import Register from "./pages/Register";
 import Main from "./pages/Main";
 import ChangePw from "./pages/ChangePw";
 import AccountRecovery from "./pages/AccountRecovery";
+import MyReservationInfo from "./pages/MyReservationInfo";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/changepw" element={<ChangePw />} />
         <Route path="/accountrecovery" element={<AccountRecovery />} />
+        <Route path="/myreservationinfo" element={<MyReservationInfo />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,7 +1,8 @@
 import { atom } from "jotai";
 
 // 백엔드 서버 주소
-export const SERVER_HOST = "http://localhost:3010"; // AXIOS 통신 할 서버 주소
+export const SERVER_HOST = "http://localhost:3002"; // AXIOS 통신 할 서버 주소
+
 
 // LocalStorage에서 상태를 불러오기
 const savedLoginState = JSON.parse(
