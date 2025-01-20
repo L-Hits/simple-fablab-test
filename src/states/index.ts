@@ -1,7 +1,8 @@
 import { atom } from "jotai";
 
 // 백엔드 서버 주소
-export const SERVER_HOST = "http://localhost:3010"; // AXIOS 통신 할 서버 주소
+export const SERVER_HOST = "http://localhost:3002"; // AXIOS 통신 할 서버 주소
+
 
 // LocalStorage에서 상태를 불러오기
 const savedLoginState = JSON.parse(
@@ -17,4 +18,6 @@ export const testFablabloginStateAtom = atom({
 
 export const selectedSeatAtom = atom<string | null>(null); // 선택된 좌석 상태
 
+// 현재 페이지 상태 관리
+export const currentPageAtom = atom(1);
 

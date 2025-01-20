@@ -275,7 +275,7 @@ const Main = () => {
           "/reservations",
           {
             userId,
-            seat_id: selectedSeat,
+            seat_id: parseInt(selectedSeat, 10), // 숫자로 변환
             book_date: new Date().toISOString().slice(0, 19).replace("T", " "),
           },
           {
@@ -480,6 +480,7 @@ const Main = () => {
         }}
       >
         예약 페이지
+        <Link to="/notice">공지사항</Link>
         <div
           className="seat-container"
           css={{
@@ -533,7 +534,10 @@ const Main = () => {
             gap: "20px",
           }}
         >
-          <h2>내 정보</h2>
+            <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+            <h2>내 정보</h2>
+            <Link to="/myreservationinfo">내 예약 정보</Link>
+            </div>
           <Paper
           sx={{
             display: "flex",
